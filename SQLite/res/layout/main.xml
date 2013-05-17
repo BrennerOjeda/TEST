@@ -1,0 +1,191 @@
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo" >
+    
+    
+    <ImageView
+        android:id="@+id/ivPrincipal"
+        android:layout_width="248dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/hoja" />
+
+    <HorizontalScrollView 
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <ImageView 
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/hoja"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ivHoja"
+        />
+            
+            <ImageView 
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/adobo"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ivAdobo"
+        android:paddingLeft="15dp"
+        />
+            <ImageView 
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ceviche"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ivCeviche"
+        android:paddingLeft="15dp"
+        />
+            <ImageView 
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/chicharon"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ivChicharon"
+        android:paddingLeft="15dp"
+        />
+            <ImageView 
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/chifa"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ivChifa"
+        android:paddingLeft="15dp"
+        />
+ 			         
+        	
+            
+        </LinearLayout>
+        
+    </HorizontalScrollView>    
+    
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plato:" />
+    
+    <EditText
+        android:id="@+id/edNombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+    
+	<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefono:" />    
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edTelefono" />
+    </LinearLayout>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Insertar"
+        android:layout_weight="5"
+        android:id="@+id/btInsertar"
+        />    
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ver"
+        android:layout_weight="5"
+        android:id="@+id/btVer"
+        />
+    </LinearLayout>
+    
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation ="horizontal"
+        android:weightSum="10"
+        >
+        
+        <EditText 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/etBuscar"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btBuscar"
+            android:layout_weight="7"
+            android:text="Buscar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar" 
+            android:layout_weight="5"
+            android:id="@+id/btEditar"/>
+
+        <Button
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:layout_weight="5"
+            android:id="@+id/btEliminar" />
+
+    </LinearLayout>
+
+    
+    
+    
+</LinearLayout>
